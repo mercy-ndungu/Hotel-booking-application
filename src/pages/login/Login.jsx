@@ -69,12 +69,13 @@ function Login({isShowLogin}) {
           <div className="invalid-feedback">{errors.password?.message}</div>
         </div>
         <div className="">
-          <button type="submit" className="submit-button">
+        <Link to=""> <button type="submit" className="submit-button">
             Login
-          </button>
+          </button></Link>
+         
         </div>
         <div>
-          <p className="account">
+          <p className="acc">
             Don't have an account?
             <span>
               {" "}

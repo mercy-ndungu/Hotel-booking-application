@@ -51,7 +51,7 @@ const FeaturedProperties = () => {
           alt=""
           className="fpImg"
         />
-        <span className="fpName">Hilton Garden Inn</span>
+        <span className="fpName">Hilton Garden Inn Hotel</span>
         <span className="fpCity">Kenya</span>
         <span className="fpPrice">Starting from $170</span>
         <div className="fpRating">

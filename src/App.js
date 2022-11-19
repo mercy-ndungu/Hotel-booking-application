@@ -8,7 +8,6 @@ import Hotel from "./pages/hotel/Hotel";
 import List from "./pages/list/List";
 import Register from './pages/register/Register';
 import Login from "./pages/login/Login";
-
 function App() {
   return (
     <BrowserRouter>

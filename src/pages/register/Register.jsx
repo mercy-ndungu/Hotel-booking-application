@@ -136,9 +136,10 @@ function Signup() {
         </div>
         <Link></Link>
         <div>
-          <button type="submit" className="submit-button">
+          <Link to='/reserved'><button type="submit" className="submit-button">
             Signup
-          </button>
+          </button></Link>
+      
         </div>
         <div>
           <p className="account">Already have an account?

@@ -1,8 +1,6 @@
 import "./hotel.css";
-import Navbar from "../../components/navbar/Navbar";
 import Header from "../../components/header/Header";
-import MailList from "../../components/mailList/MailList";
-import Footer from "../../components/footer/Footer";
+import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleArrowLeft,
@@ -51,12 +49,11 @@ const Hotel = () => {
       newSlideNumber = slideNumber === 5 ? 0 : slideNumber + 1;
     }
 
-    setSlideNumber(newSlideNumber)
+    setSlideNumber(newSlideNumber);
   };
 
   return (
     <div>
-      <Navbar />
       <Header type="list" />
       <div className="hotelContainer">
         {open && (
@@ -82,14 +79,17 @@ const Hotel = () => {
           </div>
         )}
         <div className="hotelWrapper">
+         
           <button className="bookNow">Reserve or Book Now!</button>
+        
+          
           <h1 className="hotelTitle">Hilton Garden Inn</h1>
           <div className="hotelAddress">
             <FontAwesomeIcon icon={faLocationDot} />
             <span>Nairobi 00603 </span>
           </div>
           <span className="hotelDistance">
-            Excellent location – 500m from  JKIA
+            Excellent location – 500m from JKIA
           </span>
           <span className="hotelPriceHighlight">
             Book a stay over $114 at this hotel and get a free airport taxi
@@ -110,11 +110,15 @@ const Hotel = () => {
             <div className="hotelDetailsTexts">
               <h1 className="hotelTitle">Stay in the heart of Comfort</h1>
               <p className="hotelDesc">
-              We’re on Mombassa Road, seven km from Jomo Kenyatta International Airport, <br />
-               with access to the Nairobi Expressway at JKIA or SGR. We can arrange a free <br />
-               airport shuttle. The Nairobi National Park East Gate is 9 km away. The city <br />
-               center is only 10 minutes and Westlands is 14 minutes. Enjoy a meal in our <br />
-               Great American Grill® restaurant, or a snack from our shop.
+                We’re on Mombassa Road, seven km from Jomo Kenyatta
+                International Airport, <br />
+                with access to the Nairobi Expressway at JKIA or SGR. We can
+                arrange a free <br />
+                airport shuttle. The Nairobi National Park East Gate is 9 km
+                away. The city <br />
+                center is only 10 minutes and Westlands is 14 minutes. Enjoy a
+                meal in our <br />
+                Great American Grill® restaurant, or a snack from our shop.
               </p>
             </div>
             <div className="hotelDetailsPrice">
@@ -130,8 +134,6 @@ const Hotel = () => {
             </div>
           </div>
         </div>
-        <MailList />
-        <Footer />
       </div>
     </div>
   );
