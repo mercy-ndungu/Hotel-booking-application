@@ -1,0 +1,30 @@
+.homeContainer{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  overflow: hidden;
+
+
+}
+
+.homeTitle{
+  width: 50%;
+  font-size: 20px;
+}
+@media screen and (max-width: 1300px) {
+
+.homeContainer{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.homeTitle{
+  width: 90%;
+  font-size: 20px;
+}
+}
